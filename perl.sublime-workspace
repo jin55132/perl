@@ -7,23 +7,51 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "hello.pl",
+			"settings":
+			{
+				"buffer_size": 1410,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/C/Program Files/Vim/_vimrc",
+			"file_size": 3076,
+			"file_write_time": 129854089223433419,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 280.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"",
 				"Build: Run"
 			]
 		],
-		"width": 392.0
+		"width": 400.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -36,6 +64,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
+		"/C/Program Files/Vim/_vimrc",
 		"/Users/kwangunjin/dev/perl/perl.sublime-workspace",
 		"/Users/kwangunjin/dev/perl/myperl.sublime-project",
 		"/Users/kwangunjin/dev/perl/hello.pl",
@@ -77,8 +107,73 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "hello.pl",
+					"settings":
+					{
+						"buffer_size": 1410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1292,
+								1107
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Program Files/Vim/_vimrc",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"force_encoding": "EUC-KR",
+							"in_converting": true,
+							"incomplete_sync": null,
+							"origin_encoding": "EUC-KR",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -115,7 +210,11 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 100.0
+		"height": 147.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
 	},
 	"replace":
 	{
