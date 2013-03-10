@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 use 5.010;
-
+use warnings;
 $fred[0] = "yabba";
 $fred[1] = "dabba";
 $fred[2] = "doo";
@@ -78,7 +78,42 @@ say @num;
 @removed = splice @num, 10, 10;
 say @num;
 
-splice num, 10, 10, qw/new added values/;
+splice num, 10, 10, qw/ new added values /;
 say @num;
+
+
+while( my($index, $value ) = each @rocks)
+{
+	say "$index: $value";
+}
+
+ 
+
+ say @num + 4; #num returns the number of elements
+
+
+@backwords = sort qw/ yabba dabba doo /;
+say @backwords;
+$backwords = sort qw/ yabba dabba doo /; #sort does not return scalar value
+say $backwords;
+
+$fred = something; # scalar context 
+@pebbles = something; # list context 
+($wilma, $betty) = something ; # list context 
+($dino) = sodmething; # still list context! () 는 리스트 할당자임 위에거랑 같음..
+
+
+@wilma = undef; # does not clear the array
+@wilma = (); # correct way to clear
+
+say @rocks; #list
+say scalar @rocks; #force to return scalar...(number of array)
+
+#$input = <STDIN>;
+
+@input  = <STDIN>; #press ctrl+d (ctrl+z on windows)
+chomp (@input); #discard all the new line characters;
+say @input; 
+
 
 
