@@ -3,48 +3,77 @@
 	{
 		"selected_items":
 		[
+			[
+				"last_",
+				"last_persons"
+			],
+			[
+				"total",
+				"total1000"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "hello.pl",
+			"file": "ch4.pl",
 			"settings":
 			{
-				"buffer_size": 1410,
-				"line_ending": "Windows"
+				"buffer_size": 714,
+				"line_ending": "Windows",
+				"name": "#!/usr/bin/env perl"
 			}
 		},
 		{
-			"contents": "",
-			"file": "/C/Program Files/Vim/_vimrc",
-			"file_size": 3076,
-			"file_write_time": 129854089223433419,
+			"file": "ch5.pl",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"scratch": true
+				"buffer_size": 937,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 382.0,
 		"selected_items":
 		[
+			[
+				"",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"gist",
+				"Git: Show Tags"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"install",
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"",
-				"Build: Run"
+				"inta",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			]
 		],
 		"width": 400.0
@@ -64,8 +93,16 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
+		"/D/Work/perl/hello.pl",
+		"/D/Work/perl/list.pl",
+		"/D/Work/perl/sub.pl",
+		"/D/Work/perl/ch1.pl",
+		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
+		"/C/Users/Jin/Downloads/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/README",
 		"/C/Program Files/Vim/_vimrc",
+		"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp",
+		"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
 		"/Users/kwangunjin/dev/perl/perl.sublime-workspace",
 		"/Users/kwangunjin/dev/perl/myperl.sublime-project",
 		"/Users/kwangunjin/dev/perl/hello.pl",
@@ -76,7 +113,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -90,9 +127,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@#",
+			"@#_",
+			"@#"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -107,69 +147,64 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "hello.pl",
+					"file": "ch4.pl",
 					"settings":
 					{
-						"buffer_size": 1410,
+						"buffer_size": 714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1292,
-								1107
+								654,
+								654
 							]
 						],
 						"settings":
 						{
+							"auto_name": "#!/usr/bin/env perl",
 							"incomplete_sync": null,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Perl/Perl.tmLanguage"
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Program Files/Vim/_vimrc",
+					"file": "ch5.pl",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 937,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								888,
+								888
 							]
 						],
 						"settings":
 						{
-							"force_encoding": "EUC-KR",
-							"in_converting": true,
 							"incomplete_sync": null,
-							"origin_encoding": "EUC-KR",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 631.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -183,7 +218,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -211,6 +246,10 @@
 	"output.exec":
 	{
 		"height": 147.0
+	},
+	"output.git":
+	{
+		"height": 100.0
 	},
 	"output.sftp":
 	{
