@@ -63,14 +63,42 @@ print "I hope mr slate doesn't find out about this\n";
 print "Wilma!\n";
 
 close BEDROCK; 
-
-
+select STDOUT;
 #send errors to my private error log
 
-if(! open STDERR, ">>./error.log") {
-	die " can't open file $!";
+#if(! open STDERR, ">>./error.log") {
+#	die " can't open file $!";
+#}
+#say $!;
+
+
+#open my $rocks_fh, '<', 'rocks.txt' or die "could not open rocks.txt: $!";
+
+#while(<$rocks_fh>)
+#{
+# 	chomp;
+# }
+
+open my $rocks_fh, '>', 'rocks.txt' or die "could not open rocks.txt: $!";
+ 
+foreach my $rock( qw( slate lava granite )) {
+	say $rocks_fh $rock
 }
-say $!;
+
+
+
+print $rocks_fh, "limestone\n"; # do not use comma, it will be treated as string.
+#print STDOUT; # bareword, $_ will be printed out
+#print $rocks_fh; # WRONG, not bareword.. 
+
+#print {$rocks_fh}, $_;
+
+print { $rocks_fh } "sandstone\n"; #explicit notation of file handler
+close $rocks_fh;
+
+
+
+
 
 
 
