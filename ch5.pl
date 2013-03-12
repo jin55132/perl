@@ -26,7 +26,6 @@ say "1234567890" x 4;
 $colums = shift @input;
 $format = "%${colums}s\n";
 
-say $format;
 foreach $input (@input)
 {
 	printf  $format, $input;
