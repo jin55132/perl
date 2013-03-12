@@ -115,5 +115,6 @@ say scalar @rocks; #force to return scalar...(number of array)
 chomp (@input); #discard all the new line characters;
 say @input; 
 
+use 5.012;
 
 

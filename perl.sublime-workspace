@@ -28,7 +28,15 @@
 			"file": "ch5.pl",
 			"settings":
 			{
-				"buffer_size": 937,
+				"buffer_size": 939,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ch51.pl",
+			"settings":
+			{
+				"buffer_size": 328,
 				"line_ending": "Windows"
 			}
 		}
@@ -147,7 +155,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -187,15 +195,45 @@
 					"file": "ch5.pl",
 					"settings":
 					{
-						"buffer_size": 937,
+						"buffer_size": 939,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								888,
-								888
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ch51.pl",
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -204,7 +242,7 @@
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 631.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -245,7 +283,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 147.0
+		"height": 25.0
 	},
 	"output.git":
 	{

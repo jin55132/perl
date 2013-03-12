@@ -1,0 +1,4 @@
+slate
+lava
+granite
+sandstone
