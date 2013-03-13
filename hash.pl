@@ -62,17 +62,39 @@ if(%last_name)
 }
 
 
-while(( $key, $value ) = each %last_name)
+while(( $key, $value ) = each %last_name) # last will be () -> 0 -> false
 {
 	say "$key => $value";
 }
 
-while( (undef, undef)) # count 0 -> false
-{
-	say "yeah";
+foreach $key (sort keys %last_name) {
+	$value = $last_name{$key};
+	say $value;
 }
 
-@num = (undef, undef);
-say scalar @num;
+
+$books{'fred'} = 3;
+$books{'jin'} = 1;
+
+if($books{$someone})
+{
+	print "$someone has at leat one book checked out\n";
+}
+
+$books{barney} = 0; # no books currently checked out;
+$books{'pebbles'} = undef; #no books ever checked out; new library card;
+
+if(exists $books{'fred'})
+{
+	print "there is a library card for dino\n";
+}
+
+my $person = "fred";
+delete $books{$person}; #revoke the libarry cards..
+
+say "%books"; #no interpolation supported in double quote;
 
 
+foreach $env (keys %ENV){
+	say "$env => $ENV{$env}";	
+}
