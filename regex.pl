@@ -109,6 +109,13 @@ if(/(.)\g{-1}11/) # \g{N} same as the notation of \N
 
 
 
+$_ = 'the hal-9000 requires authorization to continue';
+#if(/hal-[\d]+/a) #for perl 5.14; /a tells old ASCII semantics
+#{
+# 	say 'hal';
+# }
+
+#if(/\s/a) # /s : [\f\t\n\r ]
 
 
 
