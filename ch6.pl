@@ -9,8 +9,8 @@ use 5.010;
 	wilma => 'flitstone',
 	);
 
-#chomp($key = <STDIN>);
-#say $names{$key};
+chomp($key = <STDIN>);
+say $names{$key};
 
 
 #problem 2

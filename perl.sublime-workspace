@@ -16,20 +16,31 @@
 	"buffers":
 	[
 		{
-			"file": "ch6.pl",
+			"contents": "#!/usr/bin/env perl\n\nuse 5.010;\n\n# while(<STDIN>)\n# {\n# 	chomp;\n# 	if(/Fred/){\n# 		say;\n# 	}\n		\n# }\n\n\n\n\nwhile(<STDIN>)\n{\n	chomp;\n	if(/(Fred|Alfred)/){\n		say;\n	}\n		\n}",
+			"file": "ch7.pl",
+			"file_size": 162,
+			"file_write_time": 1363524084000000,
 			"settings":
 			{
-				"buffer_size": 586,
-				"line_ending": "Windows"
+				"buffer_size": 165,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 382.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"",
 				"Emmet: Reflect CSS Value"
@@ -61,13 +72,9 @@
 			[
 				"instl",
 				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -84,6 +91,14 @@
 	},
 	"file_history":
 	[
+		"/home/operator1732/dev/perl/regex.pl",
+		"/home/operator1732/dev/perl/ch6.pl",
+		"/home/operator1732/.local/share/applications/gksu_nautilaus.desktop",
+		"/home/operator1732/.local/share/applications/gksu_nautilus.desktop",
+		"/etc/apache2/httpd.conf",
+		"/home/operator1732/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/operator1732/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/operator1732/.config/sublime-text-2/Packages/User/perl.sublime-build",
 		"/D/Work/perl/hash.pl",
 		"/D/Work/perl/ch5.pl",
 		"/D/Work/perl/ch6.pl",
@@ -148,35 +163,33 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ch6.pl",
+					"file": "ch7.pl",
 					"settings":
 					{
-						"buffer_size": 586,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								510,
-								510
+								99,
+								99
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
