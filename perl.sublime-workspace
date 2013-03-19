@@ -16,13 +16,18 @@
 	"buffers":
 	[
 		{
-			"contents": "#!/usr/bin/env perl\n\nuse 5.010;\n\n# while(<STDIN>)\n# {\n# 	chomp;\n# 	if(/Fred/){\n# 		say;\n# 	}\n		\n# }\n\n\n\n\nwhile(<STDIN>)\n{\n	chomp;\n	if(/(Fred|Alfred)/){\n		say;\n	}\n		\n}",
 			"file": "ch7.pl",
-			"file_size": 162,
-			"file_write_time": 1363524084000000,
 			"settings":
 			{
-				"buffer_size": 165,
+				"buffer_size": 766,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "file.pl",
+			"settings":
+			{
+				"buffer_size": 2326,
 				"line_ending": "Unix"
 			}
 		}
@@ -142,6 +147,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"",
+			"close",
 			"each",
 			"@#",
 			"@#_",
@@ -163,6 +170,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -170,15 +178,15 @@
 					"file": "ch7.pl",
 					"settings":
 					{
-						"buffer_size": 165,
+						"buffer_size": 766,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								99,
-								99
+								696,
+								696
 							]
 						],
 						"settings":
@@ -189,7 +197,36 @@
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "file.pl",
+					"settings":
+					{
+						"buffer_size": 2326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1344,
+								1344
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 629.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
