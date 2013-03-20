@@ -27,3 +27,11 @@ if(/Barney[^\n]Fred/s) { #matching any character (. doens't accept \n newline)
 	say;
 }
 
+$_ = "BarneyAlfred";
+if(/ Barney Alfred /x) { #adding white space
+	say
+}
+if(/ Barney Alfred /ix) { # combining /i /s
+	say
+}
+
