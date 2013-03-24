@@ -116,6 +116,10 @@ if(/hal-[\d]+/a) #for perl 5.14; /a tells old ASCII semantics
 }
 
 #if(/\s/a) # /s : [\f\t\n\r ]
+# \w word [a-zA-Z0-9_]
+
+#\d digit \s spaces..
+
 
 
 
