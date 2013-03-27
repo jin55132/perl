@@ -31,8 +31,38 @@ $_ = "BarneyAlfred";
 if(/ Barney Alfred /x) { #adding white space
 	say
 }
-if(/ Barney Alfred /ix) { # combining /i /s
+if(/ Barney Alfred /ix) { # combining /i /X
 	say
 }
 
 use 5.014;
+
+
+$_ = <STDIN>;
+
+my $OE = chr( 0xBC ); # get exactly what we intend
+
+if (/$OE/li) { # that's better
+print "Found $OE\n";
+}
+
+# $_ = <STDIN>;
+# if (/OE/ui) { # now uses Unicode
+# print "Found OE\n";
+# }
+
+
+
+# m{\Ahttps?://}i # Absoulute beginning
+# m{\.png\z}i #absoulute ending
+
+
+while (<STDIN>) {
+	print if /\.png\Z/; # Absoulute Ending + optional Newline
+
+}
+
+while (<STDIN>) {
+	chomp;
+	print "$_\n" if /\.png\z/;
+}

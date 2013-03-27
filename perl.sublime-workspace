@@ -16,10 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "ch7.pl",
+			"file": "/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 766,
+				"buffer_size": 167,
 				"line_ending": "Unix"
 			}
 		},
@@ -29,6 +29,14 @@
 			{
 				"buffer_size": 2326,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "processing.pl",
+			"settings":
+			{
+				"buffer_size": 966,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -96,6 +104,9 @@
 	},
 	"file_history":
 	[
+		"/D/Work/perl/ch7.pl",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/Perl/Perl.sublime-build",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/home/operator1732/dev/perl/regex.pl",
 		"/home/operator1732/dev/perl/ch6.pl",
 		"/home/operator1732/.local/share/applications/gksu_nautilaus.desktop",
@@ -147,6 +158,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\Z",
+			"\\z",
 			"\"",
 			"close",
 			"each",
@@ -170,34 +183,31 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ch7.pl",
+					"file": "/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 766,
+						"buffer_size": 167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								696,
-								696
+								144,
+								144
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Perl/Perl.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 867.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -214,8 +224,8 @@
 						"selection":
 						[
 							[
-								1344,
-								1344
+								2316,
+								2316
 							]
 						],
 						"settings":
@@ -226,7 +236,33 @@
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 629.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "processing.pl",
+					"settings":
+					{
+						"buffer_size": 966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								754,
+								754
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 774.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
