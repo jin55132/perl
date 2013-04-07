@@ -35,10 +35,10 @@ if(/ Barney Alfred /ix) { # combining /i /X
 	say
 }
 
-use 5.014;
+# use 5.014;
 
 
-$_ = <STDIN>;
+# $_ = <STDIN>;
 
 # my $OE = chr( 0xBC ); # get exactly what we intend
 
@@ -46,10 +46,10 @@ $_ = <STDIN>;
 # print "Found $OE\n";
 # }
 
-$_ = <STDIN>;
-if (/OE/ui) { # now uses Unicode
-print "Found OE\n";
-}
+# $_ = <STDIN>;
+# if (/OE/ui) { # now uses Unicode
+# print "Found OE\n";
+# }
 
 
 
@@ -110,6 +110,120 @@ while(<>) # read from @ARGV
 
 }
 
+
+$_ = "Hello there, neighbor";
+
+if(/\s(\w+),/)
+{
+	say "the word was $1";
+}
+
+if(/(\S+) (\S+), (\S+)/) # /S equals to ^/s
+{
+	say " words were $1 $2 $3";
+}
+
+my $dino = "I fear that I'll be extinct after 1000 years";
+if($dino =~ /(\d*) years/)
+{
+	say "That said '$1' years.";
+}
+
+$dino = "I fear that I'll be extinct after a few million years";
+if($dino =~ /(\d*) years/)
+{
+	say "That said '$1' years."; # empty string
+}
+my $wilma = '123';
+$wilma =~ /([0-9]+)/; # Succeeds, $1 is 123
+$wilma =~ /([a-zA-Z]+)/; # BAD! Untested match result 
+print "Wilma's word was $1... or was it?\n"; # Still 123!
+
+
+if ($wilma =~ /([a-zA-Z]+)/) 
+{ 
+	print "Wilma's word was $1.\n";
+} else {
+	print "Wilma doesn't have a word.\n"; 
+}
+
+if ($wilma =~ /([a-zA-Z]+)/) { 
+	my $wilma_word = $1;
+}
+
+$_ = "bronto saurus burger";
+if (/(bronto)?saurus (steak|burger)/) 
+{ 
+	print "Fred wants a $2\n";
+}
+
+# 괄호로 grouping 하지만 변수에 저장하지는 않기
+if (/(?:bronto)?saurus (steak|burger)/) 
+{ 
+	print "Fred wants a $1\n";
+}
+
+if (/(?:bronto)?saurus (?:BBQ )?(steak|burger)/) 
+{ 
+	print "Fred wants a $1\n";
+}
+
+#named capture
+
+use 5.010;
+my $names = 'Fred or Barney';
+
+if ( $names =~ m/(\w+) and (\w+)/ ) 
+{ # won't match
+	say "I saw $1 and $2"; 
+}
+
+if ( $names =~ m/(\w+) (and|or) (\w+)/ ) 
+{ # matches now
+	say "I saw $1 and $2"; 
+}
+
+if ( $names =~ m/(?<name1>\w+) (?:and|or) (?<name2>\w+)/ ) 
+{
+	say "I saw $+{name1} and $+{name2}"; 
+}
+
+#back reference \1, \2 .. \g{1} \g{2}
+my $names = 'Fred Flintstone and Wilma Flintstone';
+if ( $names =~ m/(?<last_name>\w+) and \w+ \g{last_name}/ ) 
+{ 
+	say "I saw $+{last_name}";
+}
+
+if ( $names =~ m/(?<last_name>\w+) and \w+ \k<last_name>/ ) {
+	say "I saw $+{last_name}"; 
+}
+
+#The Automatic Match Variables
+
+if ("Hello there, neighbor" =~ /\s(\w+), neighbor/) { 
+	print "That actually matched '$&'.\n"; # $& entire matched section
+}
+
+if ("Hello there, neighbor" =~ /\s(\w+),/) {
+	print "That was ($`)($&)($').\n"; 
+	# $` = $&의 앞부분
+	# $' = $&의 뒷부분 
+}
+
+use 5.010;
+if ("Hello there, neighbor" =~ /\s(\w+),/p) {
+	print "That actually matched '${^MATCH}'.\n"; }
+if ("Hello there, neighbor" =~ /\s(\w+),/p) {
+	print "That was (${^PREMATCH})(${^MATCH})(${^POSTMATCH}).\n";
+}
+
+$_ = "aaaa";
+
+if(/a{5,15}/) # matches  5 to 15 times 
+{
+	say "matched";
+}
 
 
 
