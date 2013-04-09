@@ -43,6 +43,7 @@ s/(fred|barney)/\L\u$1/ig; say; #Using \u with \L means “all lowercase, but ca
 $name = "josh smith";
 print "Hello, \L\u$name\E, would you like to play a game?\n";
 
+
 my @fields = split /:/, "abc:def:g:h"; # gives ("abc", "def", "g", "h")
 say @fields;
 
@@ -59,3 +60,47 @@ $_ = " a b c d e f ";
 my @fields = split; # like split /\s+/, $_; #surpress leading empty
 $f = @fields;
 say $f;
+
+
+
+#join
+
+
+#my $result = join $glue, @pieces;
+my $x = join ":", 4, 6, 8, 10, 12;
+say $x;
+
+# at least two can be glued
+my $y = join "foo", "bar"; # gives just "bar", since no foo glue is needed
+my @empty; # empty array
+my $empty = join "baz", @empty; # no items, so it's an empty string
+
+my @values = split /:/, $x;
+my $z = join "-", @values;
+say $z;
+
+$_ = "Hello there, neighbor!";
+my($first, $second, $third) = /(\S+) (\S+), (\S+)/; #list context
+print "$second is my $third\n";
+
+
+my $text = "Fred dropped a 5 ton granite block on Mr. Slate";
+my @words = ($text =~ /([a-z]+)/ig); 
+#In this case, a pattern with a pair of parentheses will return a capture from each time it matches:
+
+say "@words";
+
+
+my $data = "Barney Rubble Fred Flintstone Wilma Flintstone";
+my %last_name = ($data =~ /(\w+)\s+(\w+)/g);
+
+$_ = "I'm talking about the cartoon with Fred and <BOLD>Wilma</BOLD>!";
+s#<BOLD>(.*)</BOLD>#$1#g;
+$_ = "I thought you said Fred and <BOLD>Velma</BOLD>, not <BOLD>Wilma</BOLD>";
+s#<BOLD>(.*?)</BOLD>#$1#g; 
+#non greedy;
+
+# /m regular expression option lets them match at internal newlines
+$_ = "I'm much better\nthan Barney is\nat bowling,\nWilma.\n";
+print "Found 'wilma' at start of line\n" if /^wilma\b/im;
+# ^ (begenning) works!
