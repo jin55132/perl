@@ -16,22 +16,6 @@
 	"buffers":
 	[
 		{
-			"file": "ch8.pl",
-			"settings":
-			{
-				"buffer_size": 242,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "matching.pl",
-			"settings":
-			{
-				"buffer_size": 3715,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "processing.pl",
 			"settings":
 			{
@@ -43,7 +27,7 @@
 			"file": "processing2.pl",
 			"settings":
 			{
-				"buffer_size": 1313,
+				"buffer_size": 2554,
 				"line_ending": "Windows"
 			}
 		}
@@ -51,9 +35,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 382.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"",
 				"Emmet: Reflect CSS Value"
@@ -85,13 +77,9 @@
 			[
 				"instl",
 				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -108,34 +96,28 @@
 	},
 	"file_history":
 	[
-		"/D/Work/perl/processing.pl",
-		"/D/Work/perl/input.txt",
+		"/D/Work/perl/file.pl",
 		"/D/Work/perl/matching.pl",
-		"/C/Users/STC/Desktop/승인서/사전연동시험망도_군단변경.xml",
-		"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp",
-		"/D/Work/perl/perl.sublime-workspace",
-		"//23.44.155.124/private/진광언/om.sql",
-		"/D/Work/perl/regex.pl",
-		"/D/Work/trunk/NCTE/CI/PKCSJNI/CryptoJNI.cpp",
-		"/D/1사외비/00. NCS/30. 망계획/XML/2.1D.diff",
-		"/D/1사외비/00. NCS/30. 망계획/XML/2.1E",
-		"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSImplementation.cpp",
-		"/D/Work/perl/ch3.pl",
-		"/D/Work/perl/perl.sublime-project",
-		"/D/1사외비/00. NCS/30. 망계획/XML/HCTR.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
-		"/C/Users/Jin/Desktop/변경법.txt",
-		"/D/Work/trunk/test3/test.cc",
-		"/D/Work/trunk/test3/Makefile",
-		"/D/Work/trunk/error.txt",
-		"/D/Work/trunk/NCTE/CI/PKCSJNI/Makefile",
-		"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSJNI.makefile",
-		"/D/Work/perl/ch6.pl",
-		"/D/1사외비/00. NCS/30. 망계획/XML/무선접속기.XML",
 		"/D/Work/perl/hash.pl",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/download/json",
+		"/D/Work/CLWD/Setup/Setup/Setup.vdproj",
+		"/D/Work/perl/ch7.pl",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/Perl/Perl.sublime-build",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/home/operator1732/dev/perl/regex.pl",
+		"/home/operator1732/dev/perl/ch6.pl",
+		"/home/operator1732/.local/share/applications/gksu_nautilaus.desktop",
+		"/home/operator1732/.local/share/applications/gksu_nautilus.desktop",
+		"/etc/apache2/httpd.conf",
+		"/home/operator1732/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/operator1732/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/operator1732/.config/sublime-text-2/Packages/User/perl.sublime-build",
 		"/D/Work/perl/ch5.pl",
+		"/D/Work/perl/ch6.pl",
 		"/D/Work/perl/cp6.pl",
+		"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSJNI.makefile",
+		"/D/Work/trunk/NCTE/CI/PKCSJNI/Makefile",
 		"/D/Work/perl/ch51.pl",
 		"/D/Work/perl/ch4.pl",
 		"/D/Work/trunk/NCTE/CI/Example/MyApp.makefile",
@@ -143,8 +125,11 @@
 		"/D/Work/perl/list.pl",
 		"/D/Work/perl/sub.pl",
 		"/D/Work/perl/ch1.pl",
+		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
 		"/C/Users/Jin/Downloads/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/README",
 		"/C/Program Files/Vim/_vimrc",
+		"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp",
 		"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
 		"/Users/kwangunjin/dev/perl/perl.sublime-workspace",
 		"/Users/kwangunjin/dev/perl/myperl.sublime-project",
@@ -163,7 +148,6 @@
 		"height": 0.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -171,11 +155,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"+",
-			"$1",
-			"named",
-			"while(",
-			"while(<>)",
+			"!",
+			"die",
+			"\\b",
+			"foreach",
+			"\\Z",
+			"\\z",
+			"\"",
+			"close",
 			"each",
 			"@#",
 			"@#_",
@@ -197,67 +184,10 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ch8.pl",
-					"settings":
-					{
-						"buffer_size": 242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								198
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Perl/Perl.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "matching.pl",
-					"settings":
-					{
-						"buffer_size": 3715,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								242,
-								332
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Perl/Perl.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "processing.pl",
 					"settings":
 					{
@@ -268,35 +198,34 @@
 						"selection":
 						[
 							[
-								636,
-								636
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 684.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "processing2.pl",
 					"settings":
 					{
-						"buffer_size": 1313,
+						"buffer_size": 2554,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1231,
-								1231
+								2554,
+								2554
 							]
 						],
 						"settings":
@@ -304,7 +233,7 @@
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 458.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -376,7 +305,7 @@
 		],
 		"width": 380.0
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
