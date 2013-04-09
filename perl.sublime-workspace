@@ -43,8 +43,16 @@
 			"file": "processing2.pl",
 			"settings":
 			{
-				"buffer_size": 1313,
+				"buffer_size": 1805,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ncedata/nps/npfiles/temp.txt",
+			"settings":
+			{
+				"buffer_size": 2621222,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -108,6 +116,7 @@
 	},
 	"file_history":
 	[
+		"/D/Work/perl/list.pl",
 		"/D/Work/perl/processing.pl",
 		"/D/Work/perl/input.txt",
 		"/D/Work/perl/matching.pl",
@@ -140,7 +149,6 @@
 		"/D/Work/perl/ch4.pl",
 		"/D/Work/trunk/NCTE/CI/Example/MyApp.makefile",
 		"/D/Work/perl/hello.pl",
-		"/D/Work/perl/list.pl",
 		"/D/Work/perl/sub.pl",
 		"/D/Work/perl/ch1.pl",
 		"/C/Users/Jin/Downloads/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/README",
@@ -197,7 +205,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -288,23 +296,50 @@
 					"file": "processing2.pl",
 					"settings":
 					{
-						"buffer_size": 1313,
+						"buffer_size": 1805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1231,
-								1231
+								1805,
+								1805
 							]
 						],
 						"settings":
 						{
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 458.0,
+						"translation.y": 728.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/ncedata/nps/npfiles/temp.txt",
+					"settings":
+					{
+						"buffer_size": 2621222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

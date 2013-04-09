@@ -42,3 +42,20 @@ s/(fred|barney)/\u$1/ig; say; #When written in lowercase (\l and \u ), they affe
 s/(fred|barney)/\L\u$1/ig; say; #Using \u with \L means “all lowercase, but capitalize the first letter”:#
 $name = "josh smith";
 print "Hello, \L\u$name\E, would you like to play a game?\n";
+
+my @fields = split /:/, "abc:def:g:h"; # gives ("abc", "def", "g", "h")
+say @fields;
+
+#trailing empty fields are discarded
+my @fields = split /:/, ":::a:b:c:::"; # gives ("", "", "", "a", "b", "c")
+
+my $some_input = "This is a \t test.\n";
+my @args = split /\s+/, $some_input; # ("This", "is", "a", "test.")
+
+say "@args";
+
+#The default for split is to break up $_ on whitespace:
+$_ = " a b c d e f ";
+my @fields = split; # like split /\s+/, $_; #surpress leading empty
+$f = @fields;
+say $f;
