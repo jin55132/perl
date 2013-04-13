@@ -1,5 +1,6 @@
 
 #!usr/bin/env perl
+## Copyright (C) 20XX by Yours Truly
 use 5.010;
 
 
