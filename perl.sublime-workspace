@@ -16,15 +16,22 @@
 	"buffers":
 	[
 		{
-			"contents": "#!/usr/bin/env perl\n\nuse 5.014;\n\nuse File::Basename qw / /;\n#use File::Basename qw ();\n\n\nmy $name = \"/home/fred/flintstone\\n/brontosaurus\";\nmy $basename = $name =~ s#.*/##rs; # \n\nsay $basename;\n\n$basename = basename $name;\n\nsay $basename;\n\nuse File::Basename qw/ /; # import no function names\nmy $betty = &dirname($wilma); # uses your own subroutine &dirname\n# (not shown)\nmy $name = \"/usr/local/bin/perl\";\nmy $dirname = File::Basename::dirname $name; # dirname from the module\n\n\n\n\n\n",
-			"file": "modules.pl",
-			"file_size": 506,
-			"file_write_time": 130105869887280632,
+			"file": "ch12.pl",
 			"settings":
 			{
-				"buffer_size": 483,
-				"line_ending": "Windows",
-				"name": "#!/usr/bin/env perl"
+				"buffer_size": 509,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#!/usr/bin/env perl\n\nuse 5.010;\n\n\n#chdir \"c:/2\" or die \"$!\";\nchdir \"~Jin\" or die \"$!\"; # User's home directory, OS independent\n\nmy @all_files = glob \".* *\"; # patterns with space\n#say @all_files;\n",
+			"file": "directory.pl",
+			"file_size": 208,
+			"file_write_time": 130111696524262971,
+			"settings":
+			{
+				"buffer_size": 196,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -88,6 +95,28 @@
 	},
 	"file_history":
 	[
+		"/D/Work/perl/example",
+		"/D/Work/perl/directory",
+		"/D/Work/perl/list.pl",
+		"/D/Work/perl/ch4.pl",
+		"/D/1사외비/00. NCS/30. 망계획/XML/소형중계기.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/SLR.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/전투무선망관리장비.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/접속제어기.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/타체계연동장비.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/부가기능제어장치.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/MLR.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/무선접속기.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/체계-TMMR연동장비.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/HCTR.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/라인접속장비.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/아날로그접속장비.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/인접기지국정보.xml",
+		"/D/ncedata/nps/npfiles/ncfs.log",
+		"/D/Work/perl/modules.pl",
+		"//23.44.155.124/private/진광언/망계획 스키마/20130321_TICN_ALL_STC.sql",
 		"/D/Work/perl/ch10.pl",
 		"/D/Work/perl/control.pl",
 		"/D/Work/perl/ch9.pl",
@@ -95,11 +124,9 @@
 		"/D/Work/perl/ch1.out",
 		"/D/Work/perl/ch1.pl",
 		"/D/Work/perl/example.out",
-		"/D/Work/perl/example",
 		"/D/Work/perl/ch1.pl.bak",
 		"/D/Work/perl/ch51.pl",
 		"/D/Work/perl/ch5.pl",
-		"/D/Work/perl/list.pl",
 		"/D/Work/perl/file.pl",
 		"/D/Work/perl/ch8.pl.bak",
 		"/D/Work/perl/bash.exe.stackdump",
@@ -110,28 +137,12 @@
 		"/D/Work/perl/replace.pl",
 		"/D/Work/perl/fred",
 		"/D/Work/perl/fred03.dat",
-		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/아날로그접속장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/부가기능제어장치.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/소형중계기.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/접속제어기.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/체계-TMMR연동장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/전투무선망관리장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/타체계연동장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/인접기지국정보.xml",
-		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/HCTR.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/MLR.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/무선접속기.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/라인접속장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/SLR.XML",
 		"/D/NCFSTest/.settings/org.eclipse.jdt.core.prefs",
 		"/D/Work/perl/ch8.pl",
 		"/C/Users/STC/Desktop/승인서/사전연동시험망도.xml",
 		"/C/Users/STC/Desktop/.project",
 		"/C/Users/STC/Desktop/.classpath",
 		"/D/NCFSTest/build.xml",
-		"//23.44.155.124/private/진광언/망계획 스키마/20130321_TICN_ALL_STC.sql",
 		"/D/Work/trunk/NCTE/CI/NCFS/ncfs.jar",
 		"/D/Work/perl/perl.sublime-workspace",
 		"/D/ncedata/nps/npfiles/temp.txt",
@@ -155,7 +166,6 @@
 		"/D/Work/perl/ch6.pl",
 		"/D/Work/perl/hash.pl",
 		"/D/Work/perl/cp6.pl",
-		"/D/Work/perl/ch4.pl",
 		"/D/Work/trunk/NCTE/CI/Example/MyApp.makefile",
 		"/D/Work/perl/hello.pl",
 		"/D/Work/perl/sub.pl",
@@ -176,7 +186,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -187,6 +197,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"print",
+			"CREATE_DATE",
+			"FREFIX",
+			"프리픽스",
+			"PREFIX",
+			"TICN_OM",
+			"프리픽스",
+			"운용관리",
+			".",
+			">",
+			"운용.*",
+			"운용\\a",
+			"운용*",
+			"운용",
+			"운용관리",
+			"TICN_OM",
+			"운용관리",
+			"테이블",
+			"CORPS_TREE",
+			"grant",
+			"grand",
+			"OM",
+			"OM_",
 			"\\s",
 			".\";\n",
 			"\\A",
@@ -217,43 +250,71 @@
 			"@#"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"XML_CREATE_"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "modules.pl",
+					"file": "ch12.pl",
 					"settings":
 					{
-						"buffer_size": 483,
+						"buffer_size": 509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								481,
-								481
+								117,
+								117
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#!/usr/bin/env perl",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "directory.pl",
+					"settings":
+					{
+						"buffer_size": 196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -310,7 +371,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
