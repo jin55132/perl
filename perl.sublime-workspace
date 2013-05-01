@@ -43,7 +43,7 @@
 			"file": "ch14.pl",
 			"settings":
 			{
-				"buffer_size": 836,
+				"buffer_size": 840,
 				"line_ending": "Windows",
 				"name": "#!/usr/bin/env perl"
 			}
@@ -218,7 +218,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -334,7 +334,8 @@
 						"settings":
 						{
 							"origin_encoding": "ASCII",
-							"syntax": "Packages/Perl/Perl.tmLanguage"
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -347,24 +348,25 @@
 					"file": "ch14.pl",
 					"settings":
 					{
-						"buffer_size": 836,
+						"buffer_size": 840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								549,
-								549
+								840,
+								840
 							]
 						],
 						"settings":
 						{
 							"auto_name": "#!/usr/bin/env perl",
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -439,7 +441,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 212.0,
 	"status_bar_visible": true
 }
