@@ -1,45 +1,66 @@
 #!/usr/bin/env perl
 
-use 5.010001
+use 5.010001;
 
-# [25] Make a program that will repeatedly ask the user to guess a secret number
-# from 1 to 100 until the user guesses the secret number. Your program should pick
-# the number at random by using the magical formula int(1 + rand 100).§ When
-# the user guesses wrong, the program should respond, “Too high” or “Too low.” If
-# the user enters the word quit or exit, or if the user enters a blank line, the program
-# should quit. Of course, if the user guesses correctly, the program should quit then
-# as well!
+# my $answer = int (1 + rand 100);
+
+# LINE: {
+
+# 	chomp (my $guess = <STDIN> );
+
+# 	given ($guess)
+# 	{
+# 		when (! /^\d+$/) { say "not a number"}
+# 		when ($_ > $answer)
+# 		{
+# 			say "Too High";
+# 		}
+# 		when ($_ < $answer)
+# 		{
+# 			say "Too Low";
+# 		}
+# 		default { say "You got the answer"; last LINE;}
+# 	}
+
+# 	redo LINE;	
+
+# }
+	
 
 
-$DEBUG = $ENV{DEBUG} // 1;
+# # chomp (my $input = <STDIN>);
+# for( 1 ..	105)
+# {
+# 	my $what = '';
 
-$answer = int(1 + rand 100);
+# 	given ($_) {
+# 		when ($_ % 3 == 0) {
+# 			$what .= "Fizz"; continue}
+# 		when ($_ % 5 == 0) {
+# 			$what .= "Bin"; continue}
+# 		when ($_ % 7 == 0) {
+# 			$what .= "Sausage"; continue}
+		
+# 	}
+# 	say "$_ $what";
+# }
 
 
-while (<STDIN>) {
-	chomp;
+die "no file specified" unless @ARGV;
 
-	# if( /quit|exit|\A\s*\z/ ){
-	# 	say "Good Bye";
-	# 	last;
-	# }
-	# elsif( $_ > $answer)
-	# {
-	# 	say "Too high";
-	# 	say "Secret is $answer" if $DEBUG;
-	# }
-	# elsif( $_ < $answer)
-	# {
-	# 	say "Too Low";
-	# 	say "Secret is $answer" if $DEBUG;
-	# }
-	# elsif( $_ == $answer ){
-	# 	say "You got the answer [$answer]";
-	# 	last;
-	# }
-	given
+foreach (@ARGV)
+{
+	my $file = '';
+	given($_)
+	{
+		when ( -w $_ ) {$file .= "W"; continue}
+		when ( -r $_ ) {$file .= "R"; continue}
+		when ( -x $_ ) {$file .= "X"; continue}
+	}
 
+	say "$_ with $file";
 }
+
 
 
 
