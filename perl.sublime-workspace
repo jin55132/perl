@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"output",
+				"output_path"
+			],
+			[
 				"sub",
 				"sub_string"
 			],
@@ -32,20 +36,48 @@
 	"buffers":
 	[
 		{
-			"file": "string.pl",
+			"file": "filename.pl",
 			"settings":
 			{
-				"buffer_size": 2840,
+				"buffer_size": 463,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "ch14.pl",
+			"contents": "\n망관리장비-망관리용프린터\n망관리장비-망관리컴퓨터\n망관리장비\n망관리프린터\n망제어(후)\n망제어시스템(ILS용)-ILS형 망제어랙장치\n망제어시스템(차량형)-보안서버\n망제어시스템(차량형,쉘터형)-네트워크보호장치\n망제어시스템(차량형,쉘터형)-대형전시장치\n망제어시스템(차량형,쉘터형)-망제어서버\n망제어시스템(차량형,쉘터형)-망제어용프린터\n망제어시스템(차량형,쉘터형)-망제어용프린터장착대\n망제어시스템(차량형,쉘터형)-백신서버\n망제어시스템(차량형,쉘터형)-스위칭허브(광모듈)\n망제어시스템(차량형,쉘터형)-스위칭허브(광모듈-별도사진)\n망제어시스템(차량형,쉘터형)-스위칭허브\n망제어시스템(차량형,쉘터형)-케이블세트\n망제어시스템(차량형,쉘터형)-콘솔장치\n망제어프린터\n스위칭허브\n인수시험-대형전시장치 무게\n인수시험-망제어랙장치 무게-옆면\n인수시험-망제어랙장치 무게\n장비사진\n케이블조립체 랙장치용\n콘솔 (1)\n콘솔 (2)\n",
+			"file": "/D/PPT/output.txt",
+			"file_size": 849,
+			"file_write_time": 130138303597292651,
 			"settings":
 			{
-				"buffer_size": 840,
+				"buffer_size": 448,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ch15.pl",
+			"settings":
+			{
+				"buffer_size": 4550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ch13-1.pl",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 53 files for \"//\"\n\nD:\\Work\\perl\\ch10.pl:\n   12  \n   13  \n   14: $DEBUG = $ENV{DEBUG} // 1;\n   15  \n   16  $answer = int(1 + rand 100);\n   ..\n   58  \n   59  while(($k, $v) = each %ENV) {\n   60: 	printf \"%${longest}s : %s\\n\", $k, $v // \"undef\";\n   61  }\n   62  \n\nD:\\Work\\perl\\ch15.pl:\n   50  \n   51  \n   52: $DEBUG = $ENV{DEBUG} // 1;\n   53  \n   54  $answer = int(1 + rand 100);\n\nD:\\Work\\perl\\control.pl:\n   68  \n   69  \n   70: for($_ = \"bedrock\"; s/(.)//; ){\n   71  	print \"One Character is: $1\\n\";\n   72  }\n   ..\n  165  say $last;\n  166  \n  167: my $last = $last_name{$someone} // '(No last name)'; # new operator \n  168  say $last;\n  169  \n  170: my $Verbose = $ENV{PAS} // 1;\n  171  print \"I can talk to you!\\n\" if $Verbose;\n  172  \n  ...\n  181  foreach my $try ( 0, undef, '0', 1, 25 ) {\n  182  	print \"Trying [$try] ---> \";\n  183: 	my $value = $try // 'default';\n  184  	say \"\\tgot [$value]\";\n  185  }\n  ...\n  189  \n  190  my $name; # no value, so undefined!\n  191: printf \"%s\", $name // '';\n\nD:\\Work\\perl\\matching.pl:\n   55  \n   56  \n   57: # m{\\Ahttps?://}i # Absoulute beginning\n   58  # m{\\.png\\z}i #absoulute ending\n   59  \n\nD:\\Work\\perl\\perl.sublime-workspace:\n  119  		\"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Controls/ConfirmationDialog.xaml.cs\",\n  120  		\"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Service/DialogResult.cs\",\n  121: 		\"//23.44.155.124/private/진광언/망계획 설치/망계획0507/20130507_TICN_ALL_STC.sql\",\n  122  		\"/D/Work/trunk/NCTE/CI/CryptoUI_/Status.xaml\",\n  123: 		\"//23.44.155.124/private/진광언/sql/dscp.sql\",\n  124: 		\"//23.44.155.124/private/진광언/test3/test.cpp\",\n  125  		\"/D/1사외비/00. NCS/30. 망계획/설치파일/오라클 DB설정/5. 전체/NP_DB/TICN_DB_CREATE.sql\",\n  126: 		\"//23.44.155.124/private/진광언/WpfApplication1.exe\",\n  127: 		\"//23.44.155.124/private/진광언/망계획 설치/망계획0503/TICNNetPlan.exe.Config\",\n  128  		\"/D/Work/trunk/NCTE/CI/PKCSJNI/JNIHelpher.cpp\",\n  129  		\"/D/Work/trunk/NCTE/CI/PKCSJNI/CryptoJNI.cpp\",\n  ...\n  140  		\"/D/Work/perl/list.pl\",\n  141  		\"/C/Users/STC/Desktop/넷커스/iptable.sql\",\n  142: 		\"//23.44.155.124/private/진광언/perl/string.pl\",\n  143  		\"/C/Users/STC/Desktop/넷커스/XML.zip\",\n  144: 		\"//23.44.155.124/private/진광언/암호파일/암호파일/ncs_event_list.xml\",\n  145: 		\"//23.44.155.124/private/진광언/암호파일/ncs_event_list.xml\",\n  146  		\"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML\",\n  147  		\"/D/1사외비/00. NCS/30. 망계획/XML/전투무선망관리장비.XML\",\n  ...\n  163  		\"/D/Work/perl/ch91.pl\",\n  164  		\"/D/Work/perl/ch8.pl\",\n  165: 		\"//23.44.155.124/private/진광언/iptable.sql\",\n  166  		\"/C/Users/STC/Desktop/iptable.sql\",\n  167  		\"/D/Work/perl/ch1.out\",\n  ...\n  181  		\"/D/ncedata/nps/npfiles/ncfs.log\",\n  182  		\"/D/Work/perl/modules.pl\",\n  183: 		\"//23.44.155.124/private/진광언/망계획 스키마/20130321_TICN_ALL_STC.sql\",\n  184  		\"/D/Work/perl/control.pl\",\n  185  		\"/D/Work/perl/ch9.pl\",\n  ...\n  207  		\"/C/Users/STC/Desktop/승인서/사전연동시험망도_군단변경.xml\",\n  208  		\"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp\",\n  209: 		\"//23.44.155.124/private/진광언/om.sql\",\n  210  		\"/D/1사외비/00. NCS/30. 망계획/XML/2.1D.diff\",\n  211  		\"/D/1사외비/00. NCS/30. 망계획/XML/2.1E\",\n\nD:\\Work\\perl\\processing.pl:\n   17  s/(\\w+) (\\w+)/$2, $1/; say;\n   18  s/^/huge, /; say; # anchor : beginning ^\n   19: s/,.*een//; say;\n   20  s/green/red/; say; #fails\n   21  s/\\w+$/($`!)$&/; say; # anchor : end $\n   ..\n   35  $_ = \" Input data\\t may have	extra whitespace.      \";\n   36  s/\\s+/ /g; say; # remove tab\n   37: s/^\\s+//; say; # trim front\n   38: s/\\s+$//; say; # trim end\n   39: s/^\\s+|\\s+$//g # trim\n   40  \n\nD:\\Work\\perl\\processing2.pl:\n    7  \n    8  $_ = \"barney\";\n    9: s#^https://#http://#;\n   10  s{fred}{barney}; #left right different\n   11  s[fred](barney);\n\n26 matches across 7 files\n\n\nSearching 53 files for \"s/\"\n\nD:\\Work\\perl\\ch9.pl:\n    9  \n   10  my $out = $in;\n   11: $out =~ s/(\\.\\w+)?$/.out/;\n   12  \n   13  if (! open $in_fh, '<', $in ) {\n   ..\n   20  # while (<$in_fh>) {\n   21  # 	chomp;\n   22: # 	s/Fred/\\n/gi; # Replace all FREDs\n   23: # 	s/Wilma/Fred/gi; # Replace all WILMAs\n   24: # 	s/\\n/Wilma/g; # Replace the placeholder\n   25  # 	print $out_fh \"$_\\n\";\n   26  # }\n\nD:\\Work\\perl\\control.pl:\n   68  \n   69  \n   70: for($_ = \"bedrock\"; s/(.)//; ){\n   71  	print \"One Character is: $1\\n\";\n   72  }\n\nD:\\Work\\perl\\directory.pl:\n   48  foreach my $file (glob \"*.old\") {\n   49  	#my $new_name = $file;\n   50: 	#$new_name =~ s/.old$/.new/;\n   51  \n   52: 	(my $new_name = $file) =~ s/.old$/.new/;\n   53  \n   54  \n\nD:\\Work\\perl\\filename.pl:\n   19  	next if $file =~ /^\\./;\n   20  \n   21: 	$file ~= s/\\.[.^]+$//;\n   22  \n   23  \n\nD:\\Work\\perl\\hello.pl:\n   18  \n   19  #foreach(@line) {\n   20: #	s/\\w<([^>]+)>/\\U$1/g;\n   21  #	print;\n   22  #}\n\nD:\\Work\\perl\\matching.pl:\n  126  \n  127  my $dino = \"I fear that I'll be extinct after 1000 years\";\n  128: if($dino =~ /(\\d*) years/)\n  129  {\n  130  	say \"That said '$1' years.\";\n  ...\n  132  \n  133  $dino = \"I fear that I'll be extinct after a few million years\";\n  134: if($dino =~ /(\\d*) years/)\n  135  {\n  136  	say \"That said '$1' years.\"; # empty string\n\nD:\\Work\\perl\\perl.sublime-workspace:\n   33  	[\n   34  		{\n   35: 			\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml\",\n   36  			\"settings\":\n   37  			{\n   ..\n   41  		},\n   42  		{\n   43: 			\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml.cs\",\n   44  			\"settings\":\n   45  			{\n   ..\n   49  		},\n   50  		{\n   51: 			\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/ViewModel/DelegateCommand.cs\",\n   52  			\"settings\":\n   53  			{\n   ..\n  117  	\"file_history\":\n  118  	[\n  119: 		\"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Controls/ConfirmationDialog.xaml.cs\",\n  120: 		\"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Service/DialogResult.cs\",\n  121  		\"//23.44.155.124/private/진광언/망계획 설치/망계획0507/20130507_TICN_ALL_STC.sql\",\n  122  		\"/D/Work/trunk/NCTE/CI/CryptoUI_/Status.xaml\",\n  123  		\"//23.44.155.124/private/진광언/sql/dscp.sql\",\n  124  		\"//23.44.155.124/private/진광언/test3/test.cpp\",\n  125: 		\"/D/1사외비/00. NCS/30. 망계획/설치파일/오라클 DB설정/5. 전체/NP_DB/TICN_DB_CREATE.sql\",\n  126  		\"//23.44.155.124/private/진광언/WpfApplication1.exe\",\n  127  		\"//23.44.155.124/private/진광언/망계획 설치/망계획0503/TICNNetPlan.exe.Config\",\n  ...\n  130  		\"/D/Work/perl/ch15.pl\",\n  131  		\"/D/Work/perl/ch10.pl\",\n  132: 		\"/D/1사외비/00. NCS/30. 망계획/XML/접속제어기.XML\",\n  133: 		\"/D/1사외비/00. NCS/30. 망계획/XML/MLR.XML\",\n  134  		\"/D/Work/perl/given.pl\",\n  135  		\"/D/Work/perl/sub.pl\",\n  ...\n  139  		\"/D/Work/perl/ch14.pl\",\n  140  		\"/D/Work/perl/list.pl\",\n  141: 		\"/C/Users/STC/Desktop/넷커스/iptable.sql\",\n  142  		\"//23.44.155.124/private/진광언/perl/string.pl\",\n  143: 		\"/C/Users/STC/Desktop/넷커스/XML.zip\",\n  144  		\"//23.44.155.124/private/진광언/암호파일/암호파일/ncs_event_list.xml\",\n  145  		\"//23.44.155.124/private/진광언/암호파일/ncs_event_list.xml\",\n  146: 		\"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML\",\n  147: 		\"/D/1사외비/00. NCS/30. 망계획/XML/전투무선망관리장비.XML\",\n  148: 		\"/D/1사외비/00. NCS/30. 망계획/XML/SLR.XML\",\n  149: 		\"/D/1사외비/00. NCS/30. 망계획/XML/아날로그접속장비.XML\",\n  150: 		\"/D/1사외비/00. NCS/30. 망계획/XML/HCTR.XML\",\n  151: 		\"/D/1사외비/00. NCS/30. 망계획/XML/체계-TMMR연동장비.XML\",\n  152: 		\"/D/1사외비/00. NCS/30. 망계획/XML/타체계연동장비.XML\",\n  153: 		\"/D/1사외비/00. NCS/30. 망계획/XML/부가기능제어장치.XML\",\n  154: 		\"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML\",\n  155: 		\"/D/1사외비/00. NCS/30. 망계획/XML/인접기지국정보.xml\",\n  156: 		\"/D/1사외비/00. NCS/30. 망계획/XML/소형중계기.XML\",\n  157: 		\"/D/1사외비/00. NCS/30. 망계획/XML/라인접속장비.XML\",\n  158: 		\"/D/1사외비/00. NCS/30. 망계획/XML/무선접속기.XML\",\n  159: 		\"/D/1사외비/00. NCS/30. 망계획/XML/replace.pl\",\n  160: 		\"/D/1사외비/00. NCS/30. 망계획/XML/a.xml\",\n  161: 		\"/D/1사외비/00. NCS/30. 망계획/XML/a.XML\",\n  162: 		\"/D/1사외비/00. NCS/30. 망계획/XML/a.xml.bak\",\n  163  		\"/D/Work/perl/ch91.pl\",\n  164  		\"/D/Work/perl/ch8.pl\",\n  165  		\"//23.44.155.124/private/진광언/iptable.sql\",\n  166: 		\"/C/Users/STC/Desktop/iptable.sql\",\n  167  		\"/D/Work/perl/ch1.out\",\n  168  		\"/D/Work/perl/directory.pl\",\n  ...\n  179  		\"/D/Work/perl/directory\",\n  180  		\"/D/Work/perl/ch4.pl\",\n  181: 		\"/D/ncedata/nps/npfiles/ncfs.log\",\n  182  		\"/D/Work/perl/modules.pl\",\n  183  		\"//23.44.155.124/private/진광언/망계획 스키마/20130321_TICN_ALL_STC.sql\",\n  ...\n  196  		\"/D/Work/perl/fred\",\n  197  		\"/D/Work/perl/fred03.dat\",\n  198: 		\"/D/NCFSTest/.settings/org.eclipse.jdt.core.prefs\",\n  199: 		\"/C/Users/STC/Desktop/승인서/사전연동시험망도.xml\",\n  200: 		\"/C/Users/STC/Desktop/.project\",\n  201: 		\"/C/Users/STC/Desktop/.classpath\",\n  202  		\"/D/NCFSTest/build.xml\",\n  203: 		\"/D/Work/trunk/NCTE/CI/NCFS/ncfs.jar\",\n  204  		\"/D/Work/perl/perl.sublime-workspace\",\n  205: 		\"/D/ncedata/nps/npfiles/temp.txt\",\n  206  		\"/D/Work/perl/input.txt\",\n  207: 		\"/C/Users/STC/Desktop/승인서/사전연동시험망도_군단변경.xml\",\n  208  		\"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp\",\n  209  		\"//23.44.155.124/private/진광언/om.sql\",\n  210: 		\"/D/1사외비/00. NCS/30. 망계획/XML/2.1D.diff\",\n  211: 		\"/D/1사외비/00. NCS/30. 망계획/XML/2.1E\",\n  212  		\"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSImplementation.cpp\",\n  213  		\"/D/Work/perl/ch3.pl\",\n  214  		\"/D/Work/perl/perl.sublime-project\",\n  215: 		\"/C/Users/Jin/Desktop/변경법.txt\",\n  216  		\"/D/Work/trunk/test3/test.cc\",\n  217  		\"/D/Work/trunk/test3/Makefile\",\n  ...\n  223  		\"/D/Work/trunk/NCTE/CI/Example/MyApp.makefile\",\n  224  		\"/D/Work/perl/hello.pl\",\n  225: 		\"/C/Users/Jin/Downloads/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/README\",\n  226: 		\"/C/Program Files/Vim/_vimrc\",\n  227: 		\"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log\",\n  228: 		\"/Users/kwangunjin/dev/perl/perl.sublime-workspace\",\n  229: 		\"/Users/kwangunjin/dev/perl/myperl.sublime-project\",\n  230: 		\"/Users/kwangunjin/dev/perl/hello.pl\",\n  231: 		\"/Users/kwangunjin/dev/perl/a.c\",\n  232: 		\"/Users/kwangunjin/Library/Application Support/Sublime Text 2/Packages/User/perl.sublime-build\",\n  233  		\"/a.c\",\n  234: 		\"/Users/kwangunjin/dev/getenv_example.c\"\n  235  	],\n  236  	\"find\":\n  ...\n  344  				{\n  345  					\"buffer\": 0,\n  346: 					\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml\",\n  347  					\"settings\":\n  348  					{\n  ...\n  361  						{\n  362  							\"origin_encoding\": \"UTF-8 with BOM\",\n  363: 							\"syntax\": \"Packages/Text/Plain text.tmLanguage\",\n  364  							\"tab_size\": 4,\n  365  							\"translate_tabs_to_spaces\": true\n  ...\n  373  				{\n  374  					\"buffer\": 1,\n  375: 					\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml.cs\",\n  376  					\"settings\":\n  377  					{\n  ...\n  390  						{\n  391  							\"origin_encoding\": \"UTF-8 with BOM\",\n  392: 							\"syntax\": \"Packages/C#/C#.tmLanguage\"\n  393  						},\n  394  						\"translation.x\": 0.0,\n  ...\n  400  				{\n  401  					\"buffer\": 2,\n  402: 					\"file\": \"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/ViewModel/DelegateCommand.cs\",\n  403  					\"settings\":\n  404  					{\n  ...\n  417  						{\n  418  							\"origin_encoding\": \"UTF-8 with BOM\",\n  419: 							\"syntax\": \"Packages/C#/C#.tmLanguage\",\n  420  							\"tab_size\": 4,\n  421  							\"translate_tabs_to_spaces\": true\n\nD:\\Work\\perl\\processing.pl:\n    7  \n    8  $_ = \"He's out bowling with Barney tonight\";\n    9: s/Barney/Fred/;\n   10  say;\n   11  \n   12: s/Wilma/Betty/; #fails..\n   13: s/with (\\w+)/against $1's team/; # first pattern matching (\\w+)\n   14  say ;\n   15  \n   16  $_ = \"green scaly dinosaur\";\n   17: s/(\\w+) (\\w+)/$2, $1/; say;\n   18: s/^/huge, /; say; # anchor : beginning ^\n   19: s/,.*een//; say;\n   20: s/green/red/; say; #fails\n   21: s/\\w+$/($`!)$&/; say; # anchor : end $\n   22: s/\\s+(!\\W+)/$1 /; say;\n   23: s/huge/gigantic/; say;\n   24  \n   25  $_ = \"fred flintstone\";\n   26: if( s/fred/wilma/)\n   27  {\n   28  	say \"successfully replaced\";\n   ..\n   32  #global replacements\n   33  $_ = \"home, sweet home!\";\n   34: s/home/cave/g; say;\n   35  $_ = \" Input data\\t may have	extra whitespace.      \";\n   36: s/\\s+/ /g; say; # remove tab\n   37: s/^\\s+//; say; # trim front\n   38: s/\\s+$//; say; # trim end\n   39: s/^\\s+|\\s+$//g # trim\n   40  \n\nD:\\Work\\perl\\processing2.pl:\n   27  my $original = 'Fred ate 1 rib';\n   28  my $copy = $original;\n   29: $copy =~ s/\\d+ ribs?/10 ribs/;\n   30  \n   31: ($copy = $original) =~ s/\\d+ ribs?/10 ribs/;\n   32  \n   33  #use 5.014;\n   34: #$copy = $original =~ s/\\d+ ribs?/10 ribs/r; #leaves the original string and returns a modified copy\n   35  #say $copy;\n   36  \n   37  #Case Shifting\n   38  $_ = \"I saw Barney with Fred.\";\n   39: s/(fred|barney)/\\U$1/gi; say;\n   40: s/(fred|barney)/\\L$1/gi; say;\n   41: s/(\\w+) with (\\w+)/\\U$2\\E with $1/i; say;\n   42: s/(fred|barney)/\\u$1/ig; say; #When written in lowercase (\\l and \\u ), they affect only the next character:\n   43: s/(fred|barney)/\\L\\u$1/ig; say; #Using \\u with \\L means “all lowercase, but capitalize the first letter”:#\n   44  $name = \"josh smith\";\n   45  print \"Hello, \\L\\u$name\\E, would you like to play a game?\\n\";\n\nD:\\Work\\perl\\regex.pl:\n  117  }\n  118  \n  119: #if(/\\s/a) # /s : [\\f\\t\\n\\r ]\n  120  # \\w word [a-zA-Z0-9_]\n  121  \n\nD:\\Work\\perl\\string.pl:\n   32  substr($string, 0, 5) = \"Goodbye\"; # $string is now \"Goodbye, world!\"\n   33  \n   34: substr($string, -20) =~ s/fred/barney/g; # replace fred with barney in the last 20 chars\n   35  \n   36  my $previous_value = substr($string, 0, 5, \"Goodbye\"); # traditional way\n   ..\n   44  	my $number = sprintf \"%.2f\", shift @_;\n   45  	# Add one comma each time through the do-nothing loop\n   46: 	1 while $number =~ s/^(-?\\d+)(\\d\\d\\d)/$1,$2/;\n   47  	# Put the dollar sign in the right place\n   48: 	$number =~ s/^(-?)/$1\\$/;\n   49  	$number;\n   50  }\n\n102 matches across 11 files\n",
+			"settings":
+			{
+				"buffer_size": 13744,
 				"line_ending": "Windows",
-				"name": "#!/usr/bin/env perl"
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
@@ -109,6 +141,36 @@
 	},
 	"file_history":
 	[
+		"/D/Work/perl/output.txt",
+		"/D/Work/perl/directory.pl",
+		"/D/Work/perl/file.pl",
+		"/D/Work/perl/ch13.pl",
+		"/D/Work/perl/filename.pl",
+		"/D/Work/perl/ch10.pl",
+		"/D/Work/perl/ch13-1.pl",
+		"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml",
+		"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/View/Main.xaml.cs",
+		"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/ViewModel/DelegateCommand.cs",
+		"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Controls/ConfirmationDialog.xaml.cs",
+		"/C/Users/STC/Desktop/ConfirmationDialogExample/ConfirmationDialogExample/Service/DialogResult.cs",
+		"//23.44.155.124/private/진광언/망계획 설치/망계획0507/20130507_TICN_ALL_STC.sql",
+		"/D/Work/trunk/NCTE/CI/CryptoUI_/Status.xaml",
+		"//23.44.155.124/private/진광언/sql/dscp.sql",
+		"//23.44.155.124/private/진광언/test3/test.cpp",
+		"/D/1사외비/00. NCS/30. 망계획/설치파일/오라클 DB설정/5. 전체/NP_DB/TICN_DB_CREATE.sql",
+		"//23.44.155.124/private/진광언/WpfApplication1.exe",
+		"//23.44.155.124/private/진광언/망계획 설치/망계획0503/TICNNetPlan.exe.Config",
+		"/D/Work/trunk/NCTE/CI/PKCSJNI/JNIHelpher.cpp",
+		"/D/Work/trunk/NCTE/CI/PKCSJNI/CryptoJNI.cpp",
+		"/D/Work/perl/ch15.pl",
+		"/D/1사외비/00. NCS/30. 망계획/XML/접속제어기.XML",
+		"/D/1사외비/00. NCS/30. 망계획/XML/MLR.XML",
+		"/D/Work/perl/given.pl",
+		"/D/Work/perl/sub.pl",
+		"/D/Work/perl/hash.pl",
+		"/D/Work/perl/.project",
+		"/D/Work/perl/string.pl",
+		"/D/Work/perl/ch14.pl",
 		"/D/Work/perl/list.pl",
 		"/C/Users/STC/Desktop/넷커스/iptable.sql",
 		"//23.44.155.124/private/진광언/perl/string.pl",
@@ -117,7 +179,6 @@
 		"//23.44.155.124/private/진광언/암호파일/ncs_event_list.xml",
 		"/D/1사외비/00. NCS/30. 망계획/XML/호교환제어장치.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/전투무선망관리장비.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/MLR.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/SLR.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/아날로그접속장비.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/HCTR.XML",
@@ -127,7 +188,6 @@
 		"/D/1사외비/00. NCS/30. 망계획/XML/라우터.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/인접기지국정보.xml",
 		"/D/1사외비/00. NCS/30. 망계획/XML/소형중계기.XML",
-		"/D/1사외비/00. NCS/30. 망계획/XML/접속제어기.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/라인접속장비.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/무선접속기.XML",
 		"/D/1사외비/00. NCS/30. 망계획/XML/replace.pl",
@@ -136,13 +196,10 @@
 		"/D/1사외비/00. NCS/30. 망계획/XML/a.xml.bak",
 		"/D/Work/perl/ch91.pl",
 		"/D/Work/perl/ch8.pl",
-		"/D/Work/perl/string.pl",
 		"//23.44.155.124/private/진광언/iptable.sql",
 		"/C/Users/STC/Desktop/iptable.sql",
 		"/D/Work/perl/ch1.out",
-		"/D/Work/perl/directory.pl",
 		"/D/Work/perl/directory1.pl",
-		"/D/Work/perl/ch13.pl",
 		"/D/Work/perl/logfile",
 		"/D/Work/perl/egg",
 		"/D/Work/perl/ch1.pl",
@@ -156,14 +213,12 @@
 		"/D/ncedata/nps/npfiles/ncfs.log",
 		"/D/Work/perl/modules.pl",
 		"//23.44.155.124/private/진광언/망계획 스키마/20130321_TICN_ALL_STC.sql",
-		"/D/Work/perl/ch10.pl",
 		"/D/Work/perl/control.pl",
 		"/D/Work/perl/ch9.pl",
 		"/D/Work/perl/example.out",
 		"/D/Work/perl/ch1.pl.bak",
 		"/D/Work/perl/ch51.pl",
 		"/D/Work/perl/ch5.pl",
-		"/D/Work/perl/file.pl",
 		"/D/Work/perl/ch8.pl.bak",
 		"/D/Work/perl/bash.exe.stackdump",
 		"/D/Work/perl/ch09.pl",
@@ -183,7 +238,6 @@
 		"/C/Users/STC/Desktop/승인서/사전연동시험망도_군단변경.xml",
 		"/D/Work/trunk/NCTE/CI/Example/MyApp.cpp",
 		"//23.44.155.124/private/진광언/om.sql",
-		"/D/Work/trunk/NCTE/CI/PKCSJNI/CryptoJNI.cpp",
 		"/D/1사외비/00. NCS/30. 망계획/XML/2.1D.diff",
 		"/D/1사외비/00. NCS/30. 망계획/XML/2.1E",
 		"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSImplementation.cpp",
@@ -196,11 +250,9 @@
 		"/D/Work/trunk/NCTE/CI/PKCSJNI/Makefile",
 		"/D/Work/trunk/NCTE/CI/PKCSJNI/PKCSJNI.makefile",
 		"/D/Work/perl/ch6.pl",
-		"/D/Work/perl/hash.pl",
 		"/D/Work/perl/cp6.pl",
 		"/D/Work/trunk/NCTE/CI/Example/MyApp.makefile",
 		"/D/Work/perl/hello.pl",
-		"/D/Work/perl/sub.pl",
 		"/C/Users/Jin/Downloads/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/curl-7.29.0-rtmp-ssh2-ssl-sspi-zlib-idn-static-bin-w32/README",
 		"/C/Program Files/Vim/_vimrc",
 		"/C/Users/Jin/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
@@ -229,6 +281,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"s/",
+			"//",
+			"extens",
+			"확장자",
+			"ext",
+			"^\\.",
+			"TAB_EQUIP",
+			"GetSessionInfo",
+			"tokenInfoObj",
+			"release",
+			"max",
 			"qw",
 			"big_money",
 			"UID",
@@ -312,28 +375,84 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "string.pl",
+					"file": "filename.pl",
 					"settings":
 					{
-						"buffer_size": 2840,
+						"buffer_size": 463,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1429,
-								1474
+								411,
+								411
 							]
 						],
 						"settings":
 						{
 							"origin_encoding": "ASCII",
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/PPT/output.txt",
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "EUC-KR",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ch15.pl",
+					"settings":
+					{
+						"buffer_size": 4550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1184,
+								1184
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/Perl/Perl.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -344,29 +463,579 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "ch14.pl",
+					"buffer": 3,
+					"file": "ch13-1.pl",
 					"settings":
 					{
-						"buffer_size": 840,
+						"buffer_size": 330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								840,
-								840
+								163,
+								185
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#!/usr/bin/env perl",
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/Perl/Perl.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 13744,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										95,
+										97
+									],
+									[
+										241,
+										243
+									],
+									[
+										337,
+										339
+									],
+									[
+										461,
+										463
+									],
+									[
+										588,
+										590
+									],
+									[
+										682,
+										684
+									],
+									[
+										863,
+										865
+									],
+									[
+										999,
+										1001
+									],
+									[
+										1069,
+										1071
+									],
+									[
+										1421,
+										1423
+									],
+									[
+										1558,
+										1560
+									],
+									[
+										1611,
+										1613
+									],
+									[
+										1747,
+										1749
+									],
+									[
+										1807,
+										1809
+									],
+									[
+										2086,
+										2088
+									],
+									[
+										2186,
+										2188
+									],
+									[
+										2255,
+										2257
+									],
+									[
+										2496,
+										2498
+									],
+									[
+										2712,
+										2714
+									],
+									[
+										2967,
+										2969
+									],
+									[
+										3226,
+										3228
+									],
+									[
+										3431,
+										3433
+									],
+									[
+										3466,
+										3468
+									],
+									[
+										3504,
+										3506
+									],
+									[
+										3599,
+										3601
+									],
+									[
+										3607,
+										3609
+									],
+									[
+										3806,
+										3808
+									],
+									[
+										3933,
+										3935
+									],
+									[
+										3977,
+										3979
+									],
+									[
+										4025,
+										4027
+									],
+									[
+										4177,
+										4179
+									],
+									[
+										4360,
+										4362
+									],
+									[
+										4417,
+										4419
+									],
+									[
+										4532,
+										4534
+									],
+									[
+										4628,
+										4630
+									],
+									[
+										4807,
+										4809
+									],
+									[
+										4973,
+										4975
+									],
+									[
+										5123,
+										5125
+									],
+									[
+										5295,
+										5297
+									],
+									[
+										5470,
+										5472
+									],
+									[
+										5658,
+										5660
+									],
+									[
+										5731,
+										5733
+									],
+									[
+										5779,
+										5781
+									],
+									[
+										6140,
+										6142
+									],
+									[
+										6431,
+										6433
+									],
+									[
+										6481,
+										6483
+									],
+									[
+										6660,
+										6662
+									],
+									[
+										6764,
+										6766
+									],
+									[
+										6949,
+										6951
+									],
+									[
+										7001,
+										7003
+									],
+									[
+										7055,
+										7057
+									],
+									[
+										7103,
+										7105
+									],
+									[
+										7156,
+										7158
+									],
+									[
+										7205,
+										7207
+									],
+									[
+										7261,
+										7263
+									],
+									[
+										7313,
+										7315
+									],
+									[
+										7366,
+										7368
+									],
+									[
+										7414,
+										7416
+									],
+									[
+										7466,
+										7468
+									],
+									[
+										7516,
+										7518
+									],
+									[
+										7567,
+										7569
+									],
+									[
+										7617,
+										7619
+									],
+									[
+										7668,
+										7670
+									],
+									[
+										7714,
+										7716
+									],
+									[
+										7760,
+										7762
+									],
+									[
+										7920,
+										7922
+									],
+									[
+										8115,
+										8117
+									],
+									[
+										8123,
+										8125
+									],
+									[
+										8348,
+										8350
+									],
+									[
+										8396,
+										8398
+									],
+									[
+										8446,
+										8448
+									],
+									[
+										8488,
+										8490
+									],
+									[
+										8584,
+										8586
+									],
+									[
+										8668,
+										8670
+									],
+									[
+										8676,
+										8678
+									],
+									[
+										8741,
+										8743
+									],
+									[
+										8902,
+										8904
+									],
+									[
+										8952,
+										8954
+									],
+									[
+										9133,
+										9135
+									],
+									[
+										9352,
+										9354
+									],
+									[
+										9366,
+										9368
+									],
+									[
+										9512,
+										9514
+									],
+									[
+										9544,
+										9546
+									],
+									[
+										9588,
+										9590
+									],
+									[
+										9628,
+										9630
+									],
+									[
+										9690,
+										9692
+									],
+									[
+										9752,
+										9754
+									],
+									[
+										9800,
+										9802
+									],
+									[
+										9843,
+										9845
+									],
+									[
+										9906,
+										9908
+									],
+									[
+										9966,
+										9968
+									],
+									[
+										10100,
+										10102
+									],
+									[
+										10325,
+										10327
+									],
+									[
+										10504,
+										10506
+									],
+									[
+										10732,
+										10734
+									],
+									[
+										10875,
+										10877
+									],
+									[
+										11114,
+										11116
+									],
+									[
+										11307,
+										11309
+									],
+									[
+										11350,
+										11352
+									],
+									[
+										11382,
+										11384
+									],
+									[
+										11510,
+										11512
+									],
+									[
+										11545,
+										11547
+									],
+									[
+										11593,
+										11595
+									],
+									[
+										11617,
+										11619
+									],
+									[
+										11650,
+										11652
+									],
+									[
+										11696,
+										11698
+									],
+									[
+										11726,
+										11728
+									],
+									[
+										11799,
+										11801
+									],
+									[
+										11934,
+										11936
+									],
+									[
+										12023,
+										12025
+									],
+									[
+										12059,
+										12061
+									],
+									[
+										12094,
+										12096
+									],
+									[
+										12127,
+										12129
+									],
+									[
+										12272,
+										12274
+									],
+									[
+										12290,
+										12292
+									],
+									[
+										12332,
+										12334
+									],
+									[
+										12350,
+										12352
+									],
+									[
+										12410,
+										12412
+									],
+									[
+										12428,
+										12430
+									],
+									[
+										12584,
+										12586
+									],
+									[
+										12621,
+										12623
+									],
+									[
+										12658,
+										12660
+									],
+									[
+										12707,
+										12709
+									],
+									[
+										12822,
+										12824
+									],
+									[
+										13081,
+										13083
+									],
+									[
+										13284,
+										13286
+									],
+									[
+										13579,
+										13581
+									],
+									[
+										13674,
+										13676
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								4390,
+								4413
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1935.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -438,10 +1107,10 @@
 		],
 		"width": 380.0
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 212.0,
 	"status_bar_visible": true
 }
