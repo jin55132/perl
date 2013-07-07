@@ -47,7 +47,7 @@ my %about;
 
 #interpreted like double quote
 foreach (@functions) {
-	$about{$_} = `perldoc -t -f $_`;
+#	$about{$_} = `perldoc -t -f $_`;
 }
 
 # stdout to file
@@ -63,4 +63,17 @@ foreach (@functions) {
 # grep * 2>&1
  
 # stderr and stdout to file
-# command &> file
+# command &> 
+
+my $who_text = `who`; #whole line
+my @who_text = `who`; #line-by-line list context
+
+foreach (`who`) {
+	my ($user, $tty, $date) = /(\S+)\s+(\S+)\s+(.*)/;
+	$ttys{$user} .= "$tty at $date\n";
+}
+
+foreach $name (keys %ttys) {
+	say $name;
+	say $ttys{$name};
+}
