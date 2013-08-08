@@ -77,3 +77,5 @@ foreach $name (keys %ttys) {
 	say $name;
 	say $ttys{$name};
 }
+
+say $name;
