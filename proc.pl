@@ -83,4 +83,43 @@ foreach $name (keys %ttys) {
 	say $ttys{$name};
 }
 #
+open DATE, "date|" or die "cannot pipe from date: $!"; # similar to date | my program
+#open MAIL, "|mail merlyn" or die "cannot pipe to mail: $!";
+
+my $now = <DATE>;
+#print MAIL "THe time is now $now";
+#close MAIL;
+#die "mail: non-zero exit of $?" if $?; # result of the latest command is in $?
+
+#open my $find_fh, '-|', 'find', qw( / -atime +90 -size +1000 -print) or die "fork: $!"; # fourth argument goes to command arguemnt
+
+#while (<$find_fh>) {
+#	chomp;
+#	printf "%s size %dK last accessed %.2f days ago\n", $_, (1023 + -s $_)/1024, -A $_; # -s -A refer to file test section
+#}
+
+# low level implement of fork
+# system "date";
+#
+
+defined(my $pid = fork) or die "Cannot fork: $!";
+
+unless ($pid) {
+	#child process (pid 0)
+	exec "date";
+	die " cannot exec date: $!";
+}
+
+#parent process
+waitpid($pid, 0);
+
+
+#send SIGNAL
+my $pid = 1111;
+#kill 2, 4201 or die "cannot signal 4201 with SIGINT: $!";
+unless (kill 0, $pid) {
+	warn "$pid has gone away";
+}
+
+#catch SIGNAL
 
