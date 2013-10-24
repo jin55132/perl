@@ -122,4 +122,23 @@ unless (kill 0, $pid) {
 }
 
 #catch SIGNAL
+my $temp_directory="/tmp/myprog.$$";
+mkdir $temp_directory, 0700 or die "Cannot create $temp_directory: $!";
+
+sub clean_up {
+	say "cleaning up...";
+	unlink glob "$temp_directory/*";
+	rmdir $temp_directory;
+}
+
+sub my_int_handler {
+	&clean_up();
+#	die "interrupted, exiting...\n";
+}
+$SIG{'INT'} = 'my_int_handler';
+sleep(100);
+&clean_up();
+
+
+
 
