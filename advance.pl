@@ -55,8 +55,33 @@ my @matching_lines = grep { /\bfred\b/i } <FILE>;
  # same as
 my @matching_lines = grep /\bfred\b/i, <FILE>;
 
-:
+# change element of list using MAP
+
+my @data = (4.75, 1.5, 2, 1223, 5.2342, 123413.8, 2.33);
+my @formatted_data;
+
+foreach (@data) {
+	push @formatted_data, &big_money($_);
+
+}
+#same as
+my @formatted_data = map { &big_money($_) } @data;
 
 
+sub big_money {
+	my $number = sprintf "%.2f", shift @_;
+	# Add one comma each time through the do-nothing loop
+	1 while $number =~ s/^(-?\d+)(\d\d\d)/$1,$2/;
+	# Put the dollar sign in the right place
+	$number =~ s/^(-?)/$1\$/;
+	$number;
+}
+
+print "The money numbers are:\n", map{ sprintf ("%25s\n", $_) } @formatted_data;
 
 
+print "The money numbers are:\n", map{ sprintf ("%25s\n", &big_money($_)) } @data;
+
+
+print "some powers of two are:\n",
+	map "\t". (2 ** $_) . "\n", 0..15;
