@@ -25,7 +25,7 @@ my @files2 = <$name/*>; # glob
 $lines = readline FRED; # explicit file handle
 $lines = readline $name; # file handle
 
-my $dir_to_process = "d:\\";
+my $dir_to_process = "\";
 opendir DH, $dir_to_process or die "$!";
 
 foreach $file (readdir DH)
